@@ -1,0 +1,95 @@
+/* 6. body color + background-color */
+body {
+    color: #000000;
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;   /* 7. font-family */
+    margin: 0;
+    padding: 0;
+}
+
+/* 9. heading element font-family */
+h1 {
+    font-family: Georgia, serif;
+    text-align: center;
+    background-color: #0f8bd9;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+
+/* 3 paragraphs under heading */
+p {
+    text-align: center;
+    margin: 6px;
+}
+
+/* 4. <ul> class navbar */
+/* 10. <ul> position */
+/* 11. top/left/width (em units) */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    position: relative;
+    top: 0em;
+    left: 0em;
+    width: 40em;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;  /* 置中 */
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #444;
+}
+
+/* 12. dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1e1e1e;
+    min-width: 160px;
+    z-index: 1;
+    padding: 0;
+}
+
+.dropdown-content li a {
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 13. media queries */
+@media all {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+        font-size: 12px;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
