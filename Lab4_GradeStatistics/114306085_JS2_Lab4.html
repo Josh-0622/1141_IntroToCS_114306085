@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS2 Lab4 - Grade Statistics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Grade Statistics System</h1>
+    </header>
+
+    <div class="input-container">
+        <label for="mathGrade">Math Grade:</label>
+        <input type="number" id="mathGrade" min="0" max="100" required>
+
+        <label for="englishGrade">English Grade:</label>
+        <input type="number" id="englishGrade" min="0" max="100" required>
+        
+        <button id="submitBtn">Submit</button>
+    </div>
+
+    <div class="table-container">
+        <table id="gradeTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Math</th>
+                    <th>English</th>
+                    <th>Average</th>
+                </tr>
+            </thead>
+            <tbody id="gradeBody">
+                <tr>
+                    <td>1</td>
+                    <td class="math-col">60</td>
+                    <td class="english-col">70</td>
+                    <td class="average-col">65.00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="math-col">100</td>
+                    <td class="english-col">80</td>
+                    <td class="average-col">90.00</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="math-col">40</td>
+                    <td class="english-col">70</td>
+                    <td class="average-col">55.00</td>
+                </tr>
+            </tbody>
+            <tfoot id="gradeFooter">
+                <tr>
+                    <td>Average</td>
+                    <td id="avgMath">66.67</td>
+                    <td id="avgEnglish">73.33</td>
+                    <td id="avgOverall">70.00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
